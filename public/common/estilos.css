@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* colr : #162e44; */
+/* #0d6efd; */
+:root{
+  
+}
 body {
   box-sizing: border-box;
   background-color: #fefefe;
@@ -6,6 +11,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: #162e44;
+  color: white;
+
 }
 body * {
   margin: 0;
@@ -18,6 +26,9 @@ a:link,
 a:visited {
   text-decoration: none;
   color: inherit;
+}
+a:hover{
+  color: #0d6efd;
 }
 .nav {
   display: flex;
@@ -42,4 +53,15 @@ main img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.chapa{
+  position: absolute;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #33313180;
 }
