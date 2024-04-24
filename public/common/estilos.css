@@ -54,7 +54,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   padding: 2rem;
 }
 picture {
@@ -82,7 +82,8 @@ main img {
 }
 
 footer {
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
+  background-color: #162e44;
 }
 .legales {
   margin-top: 1rem;
@@ -90,7 +91,7 @@ footer {
   padding-top: 0.5rem;
   text-align: center;
 }
-.footer {
+.enlaces {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
@@ -112,48 +113,47 @@ svg {
   margin: 0.3rem;
 }
 
-
 /* formulario de contacto*/
-.formulario label{
+.formulario label {
   margin-left: 10px;
 }
 
-h1{
+h1 {
   margin-left: 10px;
 }
 
 label {
   display: inline-block;
-  width: 80px; 
-  margin-right: 10px; 
-  vertical-align: top; 
+  width: 80px;
+  margin-right: 10px;
+  vertical-align: top;
 }
 
-input{
-  width: 40%; 
+input {
+  width: 40%;
   padding: 5px;
   margin-bottom: 10px;
 }
 
 button {
-  background-color: #0d6efd; 
-  border:#162e44;
+  background-color: #0d6efd;
+  border: #162e44;
   color: white;
   padding: 8px 20px;
   text-align: center;
   font-size: 16px;
   margin-left: 105px;
   border-radius: 10px;
-  transition-duration: 0,4s;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  
-}   
+  transition-duration: 0, 4s;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
 textarea {
-  width: 30%; 
+  width: 30%;
   padding: 5px;
   margin-bottom: 10px;
-  height: 100px; 
+  height: 100px;
 }
 
 /* aca quise correr la barra de navegacion de contacto para la derecha*/
@@ -175,56 +175,58 @@ ul {
 
 /* hasta aca barra de navegacion*/
 
-.boton-principla {
-  border: #0d6efd;
-}
-
 .logo {
   display: flex;
   text-align: center;
   align-items: center;
 }
 
-button .texto {
-  fill: white;
-  stroke: #000;
-  stroke-width: 1px;
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: verdana;
-}
-
-button img {
+.boton img {
   width: 3rem;
 }
 
-button {
+.boton {
   display: flex;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 2rem;
   border: none;
-  /* outline: 1px solid black; */
-  outline-offset: 2px;
   margin: 0.5rem;
-  text-align: center;
   box-shadow: 8px 10px 10px 1px rgba(0, 0, 0, 0.5);
   align-items: center;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: bold;
+  font-family: verdana;
+  color: #fdfdfd;
 }
 
-.boton-principal {
-  background-color: rgb(0, 248, 248);
-  color: white;
-  vertical-align: middle;
+.boton.principal {
+  font-size: 1rem;
+  background-color: #162e44;
 }
-.boton-secundario {
-  color: rgb(9, 148, 241);
-  outline: 3px solid rgb(9, 148, 241);
+.boton.secundario {
+  font-size: 0.9rem;
+  background-color: #0d6efd;
+  outline-offset: 2px;
+  outline: 3px solid #0d6efd;
 }
-.boton-principal:hover {
-  background-color: rgb(0, 108, 108);
-  color: rgb(9, 148, 241);
+.boton.principal:hover {
+  background-color: #fdfdfd;
+  color: #162e44;
 }
-.boton-secundario:hover {
-  background-color: rgb(9, 148, 241);
-  color: rgb(255, 255, 255);
+.boton.secundario:hover {
+  background-color: #fdfdfd;
+  color: #0d6efd;
+}
+
+.lista {
+  list-style: none;
+}
+
+.lista li {
+  padding-bottom: 0.5rem;
+}
+
+.flex {
+  display: flex;
 }
