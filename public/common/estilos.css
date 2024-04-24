@@ -52,7 +52,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  
   text-align: start;
   width: 100%;
   padding: 2rem;
@@ -69,7 +69,9 @@ main img {
 .chapa {
   position: absolute;
   height: 100%;
-  background-color: #33313180;
+   
+  
+  background-color: #0000005b; 
   top: 0;
   left: 0;
   width: 100%;
@@ -226,4 +228,14 @@ button {
 .boton-secundario:hover {
   background-color: rgb(9, 148, 241);
   color: rgb(255, 255, 255);
+}
+
+.boton-terciario {
+  color: white;
+  outline: 3px solid rgb(9, 148, 241);
+}
+.boton-terciario svg{
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: white;
 }
