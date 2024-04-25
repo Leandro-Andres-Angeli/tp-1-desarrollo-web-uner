@@ -1,10 +1,26 @@
 body{
 
   box-sizing: border-box;
-  background-color: #b0e4f5;
+  background-color: #1654da;
  
 }
 body *{
   margin: 0;
   padding: 0;
+}
+/* Estilos específicos para el mapa */
+iframe {
+  float: right; /* Hacer que el mapa flote hacia la derecha */
+  margin-left: 20px; /* Espacio a la izquierda del mapa para separarlo del contenido */
+}
+.boton-reserva {
+  background-color: azure; /* Color de fondo del boton*/
+  color: blueviolet; /* Color del texto del boton*/
+  padding: 10px 20px; /* Espacio interno del boton*/
+  border-radius: 5px; /* Bordes redondeados del boton*/
+  text-decoration: none; /* Quitar subrayado del texto*/
+
+}
+.boton-reserva:hover{
+  background-color: chocolate; /* Cambio de color al pasar el raton sobre el boton*/
 }
