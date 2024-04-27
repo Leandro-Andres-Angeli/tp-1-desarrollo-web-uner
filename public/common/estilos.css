@@ -3,7 +3,8 @@
 /* #0d6efd; */
 :root {
   --primary-color: #162e44;
-  --secondary-color: #0d6efd;
+  --secondary-color: #ffeb3b;
+ 
   --light-color: #fdfdfd;
 }
 body {
@@ -41,6 +42,14 @@ a:hover {
   flex-direction: row;
 
   gap: 1rem;
+}
+.nav-logo svg{
+  height: 3rem;
+  width: 3rem;
+}
+.nav-logo-link{
+  display: flex;
+  align-items: center;
 }
 .main {
   background-image: url('/imgs/img1.jpeg');
@@ -218,15 +227,31 @@ ul {
   color: rgb(255, 255, 255);
 }
 
-.boton-terciario {
+.icon-btn {
   color: white;
   outline: 3px solid rgb(9, 148, 241);
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bolder;
+transition: background-color .2s ease , color .2s ease  , outline  .2s ease ;
 }
-.boton-terciario svg {
-  width: 1.3rem;
-  height: 1.3rem;
-  fill: white;
+.icon-btn svg {
+  width: 2rem;
+  height: 2rem;
+
 }
+.icon-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  outline: 3px solid    var(--secondary-color);
+ 
+}
+
+
 /* estilos lista footer */
 .lista {
   display: flex;
@@ -235,7 +260,7 @@ ul {
   flex-direction: column;
   gap: 0.5rem;
 }
-.enlaces :not(:first-child) ul {
+.lista.flex{
   flex-direction: row;
 }
 /* estilos lista footer */
