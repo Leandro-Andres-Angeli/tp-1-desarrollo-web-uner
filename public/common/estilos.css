@@ -232,8 +232,6 @@ ul {
 .enlaces .flex-column {
   gap: 0.5rem;
   display: flex;
-}
-.enlaces div ul {
   flex-direction: column;
 }
 
@@ -242,4 +240,72 @@ ul {
   display: flex;
   flex-direction: row;
 }
-/* estilos lista footer */
+
+/* estilos fotos de alojamiento */
+
+.lugar {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  gap: 1rem;
+}
+
+.lugar img {
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.lugar img:hover {
+  opacity: 0.7;
+}
+
+.foto-principal {
+  height: 30.5rem;
+  width: 25rem;
+}
+
+.foto-ver-mas {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-ver-mas img {
+  filter: brightness(50%) grayscale(100%);
+}
+
+.foto-ver-mas p {
+  cursor: pointer;
+  position: absolute;
+  font-size: 2rem;
+  text-shadow: 1px 1px 10px black;
+}
+
+.alojamiento {
+  /* background-image: url("/imgs/img1.jpeg");
+  background-size: cover; */
+  position: relative;
+  padding: 2rem;
+}
+
+.alojamiento .contenido {
+  position: relative;
+}
+
+.alojamiento h1 {
+  margin-bottom: 2rem;
+}
+
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.fotos img {
+  width: 15rem;
+  height: 15rem;
+  justify-content: space-around;
+}
