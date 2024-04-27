@@ -228,14 +228,18 @@ ul {
   fill: white;
 }
 /* estilos lista footer */
-.lista {
+
+.enlaces .flex-column {
+  gap: 0.5rem;
   display: flex;
 }
 .enlaces div ul {
   flex-direction: column;
-  gap: 0.5rem;
 }
-.enlaces :not(:first-child) ul {
+
+.enlaces .flex-row {
+  gap: 0.5rem;
+  display: flex;
   flex-direction: row;
 }
 /* estilos lista footer */
