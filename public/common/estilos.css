@@ -270,6 +270,7 @@ ul {
   position: relative;
   z-index: 1;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .lugar img {
@@ -281,9 +282,32 @@ ul {
   opacity: 0.7;
 }
 
+.separador {
+  border-bottom: 1px solid #fdfdfd;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.alojamiento {
+  /* background-image: url("/imgs/img1.jpeg");
+  background-size: cover; */
+  position: relative;
+  padding: 2rem;
+}
+
+.alojamiento .contenido {
+  position: relative;
+}
+
+.alojamiento h1 {
+  margin-bottom: 2rem;
+}
+
 .foto-principal {
-  height: 30.5rem;
-  width: 25rem;
+  height: 28.5rem;
+  min-width: 18rem;
+  max-width: 60rem;
+  flex: 1 1 20.5rem;
 }
 
 .foto-ver-mas {
@@ -304,32 +328,37 @@ ul {
   text-shadow: 1px 1px 10px black;
 }
 
-.alojamiento {
-  /* background-image: url("/imgs/img1.jpeg");
-  background-size: cover; */
-  position: relative;
-  padding: 2rem;
-}
-
-.alojamiento .contenido {
-  position: relative;
-  border-bottom: 1px solid #fdfdfd;
-  padding-bottom: 2rem;
-}
-
-.alojamiento h1 {
-  margin-bottom: 2rem;
-}
-
 .fotos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 0.5rem;
-  align-items: baseline;
+  width: 100%;
+  min-width: 18rem;
+  flex: 1 1 20.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
-.fotos img {
-  width: 15rem;
-  height: 15rem;
-  justify-content: space-around;
+.fotos img,
+.fotos .foto-ver-mas {
+  min-width: 7rem;
+}
+
+/* estilos descripción alojamiento */
+
+.descripcion-alojamiento {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.foto-anfitrion {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.anfitrion {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  align-content: center;
 }
