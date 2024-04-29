@@ -8,7 +8,8 @@ body{
 /* #0d6efd; */
 :root {
   --primary-color: #162e44;
-  --secondary-color: #0d6efd;
+  --secondary-color: #ffeb3b;
+
   --light-color: #fdfdfd;
 
 }
@@ -24,24 +25,6 @@ body {
 body * {
   margin: 0;
   padding: 0;
-  
-}
-
-/* Estilos específicos para el mapa */
-iframe {
-  float: right; /* Hacer que el mapa flote hacia la derecha */
-  margin-left: 20px; /* Espacio a la izquierda del mapa para separarlo del contenido */
-}
-.boton-reserva {
-  background-color: azure; /* Color de fondo del boton*/
-  color: blueviolet; /* Color del texto del boton*/
-  padding: 10px 20px; /* Espacio interno del boton*/
-  border-radius: 5px; /* Bordes redondeados del boton*/
-  text-decoration: none; /* Quitar subrayado del texto*/
-
-}
-.boton-reserva:hover{
-  background-color: chocolate; /* Cambio de color al pasar el raton sobre el boton*/
 }
 ul {
   list-style: none;
@@ -66,26 +49,25 @@ a:hover {
 
   gap: 1rem;
 }
+.nav-logo svg {
+  height: 3rem;
+  width: 3rem;
+}
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+}
 .main {
   background-image: url("/imgs/img1.jpeg");
   background-size: cover;
   /* overflow: hidden; */
   /* flex-grow: 1; */
   position: relative;
-
-  height: 100%;
+  min-height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* width: 100%; */
 
-  min-height:calc(100vh - 4rem ) ;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  
   text-align: start;
   width: 100%;
 
@@ -103,6 +85,8 @@ main img {
 .chapa {
   position: absolute;
   height: 100%;
+
+  background-color: #0000005b;
   top: 0;
   left: 0;
   width: 100%;
@@ -144,6 +128,9 @@ footer p {
 
 svg {
   margin: 0.3rem;
+}
+button[class^="boton"]:hover {
+  cursor: pointer;
 }
 
 /* formulario de contacto*/
@@ -281,12 +268,138 @@ ul {
   color: rgb(255, 255, 255);
 }
 
-.boton-terciario {
+.icon-btn {
   color: white;
   outline: 3px solid rgb(9, 148, 241);
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  transition: background-color 0.2s ease, color 0.2s ease, outline 0.2s ease;
 }
-.boton-terciario svg{
-  width: 1.3rem;
-  height: 1.3rem;
-  fill: white;
+.icon-btn svg {
+  width: 2rem;
+  height: 2rem;
+}
+.icon-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  outline: 3px solid var(--secondary-color);
+}
+
+/* estilos lista footer */
+
+.enlaces .flex-column {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.enlaces .flex-row {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+/* estilos fotos de alojamiento */
+
+.lugar {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.lugar img {
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.lugar img:hover {
+  opacity: 0.7;
+}
+
+.separador {
+  border-bottom: 1px solid #fdfdfd;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.alojamiento {
+  /* background-image: url("/imgs/img1.jpeg");
+  background-size: cover; */
+  position: relative;
+  padding: 2rem;
+}
+
+.alojamiento .contenido {
+  position: relative;
+}
+
+.alojamiento h1 {
+  margin-bottom: 2rem;
+}
+
+.foto-principal {
+  height: 28.5rem;
+  min-width: 18rem;
+  max-width: 60rem;
+  flex: 1 1 20.5rem;
+}
+
+.foto-ver-mas {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto-ver-mas img {
+  filter: brightness(50%) grayscale(100%);
+}
+
+.foto-ver-mas p {
+  cursor: pointer;
+  position: absolute;
+  font-size: 2rem;
+  text-shadow: 1px 1px 10px black;
+}
+
+.fotos {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  min-width: 18rem;
+  flex: 1 1 20.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.fotos img,
+.fotos .foto-ver-mas {
+  min-width: 7rem;
+}
+
+/* estilos descripción alojamiento */
+
+.descripcion-alojamiento {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.foto-anfitrion {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.anfitrion {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  align-content: center;
 }
