@@ -1,39 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="common/normalize.css" />
-    <link rel="stylesheet" href="common/estilos.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="acerca.html">Acerca de</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <h1>Acerca</h1>
-      <!-- <p>
-        [Nombre de la empresa] es una empresa de reservas líder que ofrece experiencias de viaje personalizadas. Nuestros servicios incluyen reservas de vuelos, reservaciones de hoteles, alquileres de coches y paquetes turísticos. Con consultores de viajes expertos y tecnología de vanguardia, proporcionamos soluciones adaptadas para individuos, grupos y clientes corporativos. Estamos comprometidos con la excelencia, la confiabilidad y la satisfacción del cliente.
-      </p> -->
-      
-      <p>
-        [Nombre de la empresa] es una empresa de reservas líder dedicada a ofrecer experiencias de viaje personalizadas y sin problemas. Nuestra gama completa de servicios incluye reservas de vuelos, reservaciones de hoteles, alquileres de coches y paquetes turísticos. Con un equipo de consultores de viajes expertos y tecnología de vanguardia, nos aseguramos de que nuestros clientes reciban las mejores ofertas, adaptadas a sus necesidades y preferencias únicas. Desde viajes de negocios hasta vacaciones de placer, atendemos a individuos, grupos y clientes corporativos por igual. Nuestro compromiso con la excelencia, la confiabilidad y la satisfacción del cliente nos ha ganado una reputación como una de las empresas de reservas más confiables en la industria.
-      </p>
-      <!-- Boton de reserva-->
-      <a href="pagina-de-reservas.html" class="boton-reserva">¡Reserva ahora!</a>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="common/normalize.css" />
+  <link rel="stylesheet" href="common/estilos.css" />
+  <style>
+    /* Estilo para hacer las imágenes más grandes */
+    img {
+      max-width: 100%; /* Ancho máximo del contenedor */
+      height: auto; /* Mantener la proporción */
+      display: block; /* Para evitar el espacio en blanco debajo de la imagen */
+      margin-bottom: 20px; /* Espacio entre las imágenes */
+    }
+
+    /* Estilo para posicionar las imágenes */
+    .imagen-container {
+      display: flex; /* Utilizar flexbox */
+      flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
+      justify-content: space-between; /* Espaciar las imágenes */
+    }
+
+    .imagen-container figure {
+      flex: 1; /* Las imágenes ocupan el mismo espacio */
+    }
+
+    .map-container {
+      width: 100%; /* Ocupa todo el ancho disponible */
+      text-align: center; /* Centrar horizontalmente */
+      position: relative; /* Posicionamiento relativo */
+      margin-top: 500px; /* Aumentar el margen superior para separarlo más de las imágenes */
+    }
     
-  </body>   
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!4v1713994026902!6m8!1m7!1s5XS2K4ym38grHdsLQxT7Cg!2m2!1d-31.40414993576861!2d-58.00559717353937!3f202.965258379969!4f0!5f0.7820865974627469" 
-     width="600" 
-     height="450"
-  ></iframe>
+
+    .map-container iframe {
+      position: absolute; /* Posicionamiento absoluto */
+      bottom: 0; /* Colocar en la parte inferior */
+      left: 50%; /* Centrar horizontalmente */
+      transform: translateX(-50%); /* Centrar horizontalmente */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="acerca.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h1>Acerca</h1>
+    <p>
+      [Nombre de la empresa] es una empresa de reservas líder dedicada a ofrecer experiencias de viaje personalizadas y sin problemas. Nuestra gama completa de servicios incluye reservas de vuelos, reservaciones de hoteles, alquileres de coches y paquetes turísticos. Con un equipo de consultores de viajes expertos y tecnología de vanguardia, nos aseguramos de que nuestros clientes reciban las mejores ofertas, adaptadas a sus necesidades y preferencias únicas. Desde viajes de negocios hasta vacaciones de placer, atendemos a individuos, grupos y clientes corporativos por igual. Nuestro compromiso con la excelencia, la confiabilidad y la satisfacción del cliente nos ha ganado una reputación como una de las empresas de reservas más confiables en la industria.
+    </p>
+  </section>
+  <!-- Contenedor de imágenes -->
+  <div class="imagen-container">
+    <figure>
+      <img src="./imgs/img5.jpg" alt="Alojamiento con piscina"/>
+    </figure>
+    <figure>
+      <img src="./imgs/img6.jpg" alt="Alojamiento al mar"/>
+    </figure>
+  </div>
+  <div class="imagen-container">
+    <figure>
+      <img src="./imgs/img7.png" alt="Camas"/>
+    </figure>
+    <figure>
+      <img src="./imgs/img8.jpg" alt="Alojamiento vista"/>
+    </figure>
+    <figure>
+      <img src="./imgs/img9.jpg" alt="Alojamiento con piscina 2"/>
+    </figure>
+  </div>
+
+  <!-- Mapa de Google -->
+  <div class="map-container">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!4v1714420008275!6m8!1m7!1sCAoSLEFGMVFpcE5YMVJ6a2stZlUySVBXWEh2azBXYTExd3FyZTZ4YnN2MDRWUXY3!2m2!1d21.2819871!2d-157.8377611!3f154.71719332918912!4f9.34991526294968!5f0.7820865974627469" 
+      width="800" 
+      height="500"
+    ></iframe>
+  </div>
+
+</body>
 </html>
