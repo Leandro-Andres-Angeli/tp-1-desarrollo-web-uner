@@ -67,7 +67,7 @@ a:hover {
   justify-content: center;
 
   text-align: start;
-  width: 100%;
+  /* width: 100%; */
 
   padding: 2rem;
 }
@@ -432,7 +432,7 @@ ul {
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   padding: 1rem;
   border-radius: 2rem;
 }
