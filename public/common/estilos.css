@@ -67,7 +67,7 @@ a:hover {
   justify-content: center;
 
   text-align: start;
-  width: 100%;
+  /* width: 100%; */
 
   padding: 2rem;
 }
@@ -436,7 +436,43 @@ ul {
 
 .especificaciones-alojamiento ul {
   display: flex;
-  display: flex;
+
   flex-direction: column;
   gap: 1rem;
+}
+
+.categorias-alojamiento img {
+  width: 2rem;
+}
+
+.categorias-alojamiento {
+  flex-direction: column;
+  z-index: 2;
+  display: flex;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.tarjetas-alojamiento {
+  padding: 1rem;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  z-index: 2;
+}
+
+.tarjetas-alojamiento img {
+  height: 10rem;
+  width: 15rem;
+  align-items: center;
+  border-top-left-radius: 2rem;
+}
+.descripcion-alojamiento {
+  text-align: left;
 }
