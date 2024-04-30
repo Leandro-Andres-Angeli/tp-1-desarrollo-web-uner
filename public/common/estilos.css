@@ -190,7 +190,7 @@ button {
   padding: 5px;
   margin-bottom: 10px;
   height: 100px;
-  display: inline-table;
+  resize : none;
 }
 .contacto {
   padding-left: 20%;
