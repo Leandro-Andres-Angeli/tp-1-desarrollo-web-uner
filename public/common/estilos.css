@@ -10,6 +10,8 @@ body {
   --secondary-color: #ffeb3b;
 
   --light-color: #fdfdfd;
+  --sections-padding-vert :3rem;
+  --sections-padding-horiz :3rem
 }
 body {
   box-sizing: border-box;
@@ -37,7 +39,7 @@ a:hover {
 }
 .nav {
   display: flex;
-  padding: 1rem 1.5rem;
+  padding: 1rem var(--sections-padding-vert)m;
   align-items: center;
 }
 .nav--links {
@@ -55,9 +57,12 @@ a:hover {
   display: flex;
   align-items: center;
 }
-.main {
+.main-index{
   background-image: url("/imgs/img1.jpeg");
   background-size: cover;
+}
+.main {
+ 
   /* overflow: hidden; */
   /* flex-grow: 1; */
   position: relative;
@@ -69,7 +74,15 @@ a:hover {
   text-align: start;
   /* width: 100%; */
 
-  padding: 2rem;
+  
+}
+.main-article{
+  padding-top: var(--sections-padding-horiz);
+  padding-bottom: var(--sections-padding-horiz);
+}
+section, footer , main {
+  padding-left: var(--sections-padding-vert);
+  padding-right: var(--sections-padding-vert);
 }
 picture {
   height: fit-content;
@@ -97,7 +110,8 @@ main img {
 }
 
 footer {
-  padding: 2rem 2rem 1rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   background-color: #162e44;
 }
 .legales {
@@ -348,6 +362,10 @@ ul {
   margin-bottom: 2rem;
 }
 
+.map-container{
+  padding: var(--sections-padding-horiz) var(--sections-padding-vert)
+
+} 
 .alojamiento {
   /* background-image: url("/imgs/img1.jpeg");
   background-size: cover; */
@@ -449,6 +467,7 @@ ul {
   flex-direction: column;
   z-index: 2;
   display: flex;
+  padding: var(--sections-padding-horiz) var(--sections-padding-vert);
 }
 
 .tarjetas {
@@ -476,3 +495,31 @@ ul {
 .descripcion-alojamiento {
   text-align: left;
 }
+
+
+    /* Estilo para hacer las imágenes más grandes */
+    img {
+      max-width: 100%; /* Ancho máximo del contenedor */
+      height: auto; /* Mantener la proporción */
+      display: block; /* Para evitar el espacio en blanco debajo de la imagen */
+      margin-bottom: 20px; /* Espacio entre las imágenes */
+    }
+
+    /* Estilo para posicionar las imágenes */
+    .imagen-container {
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-between; 
+    }
+
+    .imagen-container figure {
+      flex: 1; 
+    }
+    .map-container iframe{
+      width: 100%;
+    height: 40vw;
+    }
+
+    
+
+    
