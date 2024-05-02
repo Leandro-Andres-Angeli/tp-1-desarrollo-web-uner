@@ -503,25 +503,3 @@ ul {
 .custom-icon {
 color: #ffeb3b; /*Elijo color*/
 }
-
-.imagen-container {
-  display: grid;
-  grid-template-columns: 33vw 33vw 33vw;
-  width: 100vw;
-
-  overflow: hidden;
-}
-.imagen-container figure {
-  width: fit-content;
-  overflow: hidden;
-  max-height: 17rem;
-  max-width: 100%;
-  display: flex;
-}
-
-.imagen-container figure picture {
-  /* width: fit-content; */
-  object-fit: contain;
-
-  max-width: 100%;
-}
