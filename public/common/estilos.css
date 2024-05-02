@@ -7,6 +7,7 @@
   --secondary-color: #ffeb3b;
 
   --light-color: #fdfdfd;
+  --padding-helper-horiz:3rem
 }
 body {
   box-sizing: border-box;
@@ -71,11 +72,13 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+ 
   text-align: start;
   /* width: 100%; */
 
   padding: 2rem;
+  padding-top: var(--padding-helper-horiz);
+  padding-bottom: var(--padding-helper-horiz);
 }
 picture {
   height: fit-content;
@@ -196,10 +199,14 @@ button {
   height: 100px;
   resize : none;
 }
+
 .contacto {
   padding-left: 20%;
 }
-
+main:has(.contacto){
+  padding-top: var(--padding-helper-horiz);
+  padding-bottom: var(--padding-helper-horiz);
+}
 
 /* barra de navegacion de contacto*/
 
@@ -457,6 +464,8 @@ ul {
   flex-direction: column;
   z-index: 2;
   display: flex;
+  padding-top: var(--padding-helper-horiz);
+  
 }
 
 .tarjetas {
@@ -484,10 +493,13 @@ ul {
 .descripcion-alojamiento {
   text-align: left;
 }
+
 .imagen-container {
   display: flex;
   flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas */
   justify-content: space-between; /* Distribuye uniformemente los elementos a lo largo del contenedor */
+  padding-top:  calc( var(--padding-helper-horiz)* .5);
+  padding-bottom:  var(--padding-helper-horiz);
 }
 
 .imagen-container figure {
@@ -502,4 +514,7 @@ ul {
 }
 .custom-icon {
 color: #ffeb3b; /*Elijo color*/
+}
+.acerca-main{
+  padding: var(--padding-helper-horiz);
 }
